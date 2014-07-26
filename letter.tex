@@ -1,0 +1,35 @@
+\documentclass[
+    paper=a4, % DIN A4 page
+    fontsize=12pt, % 12pt font
+    addrfield=on, % Show senderaddress
+    backaddress=on, % Show senderaddress above recipientaddress
+    foldmarks=off, % Disable foldmarks
+    firsthead=on, % Show special header on first page
+    DIN % DIN standard
+]{scrlttr2} % use letter type
+
+\usepackage[ngerman]{babel} % german language
+\usepackage[utf8]{inputenc} % UTF8 Encoding
+
+\renewcommand*{\raggedsignature}{\raggedright} % Do not indent signature
+
+\begin{document}
+
+    \setkomavar{fromname}{Name} % Sendername
+    \setkomavar{fromaddress}{Street \& No\\ZIP \& City\\Country} % Senderaddress
+
+    \setkomavar{place}{City} % Place of the letter
+    \setkomavar{date}{\today} % Date of the letter
+
+    \setkomavar{specialmail}{Type} % Special letter type
+    \setkomavar{subject}{Subject} % Subject
+
+    \begin{letter}{Name \\ Street \& No \\ ZIP \& City \\ Country} % Recipient
+        
+        \opening{} % Opening
+
+        \closing{} % Closing
+
+    \end{letter}
+
+\end{document}
