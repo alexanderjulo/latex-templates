@@ -1,0 +1,63 @@
+\documentclass[a4paper,11pt,abstracton,toc=listofnumbered]{scrreprt}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english,ngerman]{babel}
+
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
+\usepackage[numberedbib]{apacite} % APA citations
+
+\usepackage{pdfpages} % include pdfs
+
+% better pictures
+\usepackage{float}
+\usepackage{wrapfig}
+
+% better (book-like) tables
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{multirow}
+\usepackage{booktabs}
+
+
+\usepackage{setspace}
+\onehalfspacing{} % one and a half line spacing
+
+\setcounter{tocdepth}{3} % include paragraphs in TOC
+\setcounter{secnumdepth}{3} % numerate paragraphs in text
+
+
+\title{}
+
+\date{Place, \today}
+\author{}
+\publishers{}
+
+\begin{document}
+
+    % titlepage
+    \maketitle
+    
+    % abstract
+    \begin{abstract}
+    \end{abstract}
+    
+    % toc
+    \tableofcontents
+    
+    %\include{} files for normal contents
+
+    % bibliography
+    \bibliographystyle{apacite}
+    \bibliography{file}
+    
+    \begin{appendix}
+    
+        % list of figures & tables
+        \listoffigures
+        \listoftables
+
+        %\include{} files for appendix contents
+    
+    \end{appendix}
+    
+\end{document}
